@@ -1,0 +1,670 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: #fff;
+}
+nav img {
+  width: 5rem;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+nav div a {
+  text-decoration: none;
+  color: #29503c;
+  font-size: 25px;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 10px;
+  margin: 0 1rem;
+}
+nav div a button {
+  text-decoration: none;
+  color: #29503c;
+  font-size: 25px;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 10px;
+  background-color: #fcfeef;
+  border: none;
+  border-radius: 5px;
+}
+nav div a button:hover {
+  background-color: #29503c;
+  color: #fcfeef;
+  border: 1px solid #fcfeef;
+  cursor: pointer;
+}
+nav div a:hover {
+  color: #e2cb03;
+}
+nav div #cart img {
+  width: 3rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.46);
+  height: 850px;
+}
+header div {
+  align-items: center;
+  width: 100%;
+  padding: 10rem 0;
+}
+header div h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 50px;
+  color: #fcfeef;
+  text-align: center;
+}
+header div h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 40px;
+  color: #e2cb03;
+  text-align: center;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 5rem 20rem;
+}
+#home h3 {
+  font-size: 35px;
+  color: #29503c;
+  font-family: "Tilt Neon", sans-serif;
+  padding: 1rem 0;
+}
+#home div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+#home div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#home div div a {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fcfeef;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  color: #29503c;
+  text-decoration: none;
+}
+#home div div a div {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+}
+#home div div a div img {
+  width: 200px;
+}
+#home div div a:hover {
+  color: #fcfeef;
+  background-color: #29503c;
+}
+#home div a {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  color: #29503c;
+  text-decoration: none;
+  margin: 1rem;
+}
+#home div a:hover {
+  color: #e2cb03;
+}
+
+#overzicht {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  background-color: #fff;
+}
+#overzicht #filters {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+#overzicht #filters div {
+  display: flex;
+  flex-direction: column;
+}
+#overzicht #filters div p {
+  color: #29503c;
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 20px;
+}
+#overzicht #filters div div {
+  display: flex;
+  flex-direction: row;
+}
+#overzicht #filters div div button {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #fcfeef;
+  color: #29503c;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  padding: 5px;
+  cursor: pointer;
+  width: 150px;
+}
+#overzicht #filters div div button:hover {
+  border: 1px solid #fcfeef;
+  background-color: #29503c;
+  color: #fcfeef;
+}
+#overzicht #filters div div button:active {
+  border: 1px solid #fcfeef;
+  background-color: #29503c;
+  color: #fcfeef;
+}
+#overzicht #producten {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+#overzicht #producten div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#overzicht #producten div a {
+  text-decoration: none;
+  color: #29503c;
+  background-color: #fcfeef;
+  width: 320px;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0.5rem;
+  padding: 1rem;
+}
+#overzicht #producten div a div {
+  width: 200px;
+  height: 200px;
+}
+#overzicht #producten div a div img {
+  max-width: 200px;
+  max-height: 200px;
+  margin: 0.5rem auto;
+}
+#overzicht #producten div a h4 {
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 30px;
+  height: 80px;
+}
+#overzicht #producten div a p {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  height: 100px;
+}
+#overzicht #producten div a h5 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 25px;
+  align-self: flex-end;
+}
+#overzicht #producten div a:hover {
+  color: #fcfeef;
+  background-color: #29503c;
+}
+#overzicht #producten #nummers div a {
+  background-color: #fff;
+  font-family: "Major Mono Display", monospace;
+  width: 20px;
+}
+#overzicht #producten #nummers div a:hover {
+  color: #e2cb03;
+}
+
+#inlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  padding: 10.1rem 0;
+}
+#inlog img {
+  width: 250px;
+  margin: 2rem;
+}
+#inlog form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+}
+#inlog form div {
+  margin: 1rem 0;
+}
+#inlog form div label {
+  color: #29503c;
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 25px;
+}
+#inlog form div input {
+  background-color: #fcfeef;
+  color: #e2cb03;
+  border: none;
+  font-size: 20px;
+  padding: 1rem;
+  width: 500px;
+}
+#inlog form a {
+  color: #29503c;
+  font-size: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+#inlog form a:hover {
+  color: #e2cb03;
+}
+#inlog form button {
+  background-color: #29503c;
+  color: #fcfeef;
+  border: none;
+  font-family: "Tilt Neon", sans-serif;
+  font-size: 20px;
+  border-radius: 1rem;
+  width: 400px;
+  padding: 0.5rem;
+}
+#inlog form button:hover {
+  background-color: #fcfeef;
+  color: #29503c;
+  border: 1px solid #29503c;
+}
+
+#details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem 10rem;
+}
+#details img {
+  width: 55%;
+  margin: 2rem;
+  height: fit-content;
+}
+#details div {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 2rem;
+}
+#details div h2 {
+  color: #29503c;
+  font-size: 40px;
+  font-family: "Major Mono Display", monospace;
+  margin-bottom: 1rem;
+}
+#details div p {
+  color: #29503c;
+  font-size: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  height: 100px;
+}
+#details div h3 {
+  color: #29503c;
+  font-size: 35px;
+  font-family: "Tilt Neon", sans-serif;
+  margin-bottom: 1rem;
+}
+#details div button {
+  color: #29503c;
+  font-size: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #fcfeef;
+  border: 1px solid #29503c;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100px;
+  padding: 1rem;
+}
+#details div button #green {
+  width: 20px;
+  padding: 0;
+  margin: 0;
+}
+#details div button #white {
+  display: none;
+}
+#details div button:hover {
+  color: #fcfeef;
+  background-color: #29503c;
+}
+#details div button:hover #white {
+  display: block;
+  width: 20px;
+  padding: 0;
+  margin: 0;
+}
+#details div button:hover #green {
+  display: none;
+}
+#details div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#details div div a {
+  width: 30px;
+  margin: 1rem 0.5rem;
+}
+#details div div a img {
+  width: 30px;
+}
+
+footer {
+  background-color: #29503c;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+footer div h3 {
+  font-size: 35px;
+  font-family: "Tilt Neon", sans-serif;
+  color: #e2cb03;
+}
+footer div p {
+  font-size: 20px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #fcfeef;
+}
+footer div div a {
+  margin: 0 0.5rem;
+}
+footer div div a img {
+  width: 50px;
+}
+footer div img {
+  width: 100px;
+  margin: 0.5rem auto;
+}
+
+@media screen and (max-width: 1400px) {
+  header {
+    width: 100%;
+  }
+  #home {
+    padding: 5rem 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  #home h3 {
+    padding: 1rem 0;
+    align-self: center;
+    display: flex;
+  }
+  #overzicht {
+    padding: 2rem;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  #overzicht #producten {
+    width: 75%;
+  }
+  #overzicht #producten div a {
+    width: 300px;
+    margin: 1rem 0.5rem;
+    padding: 1rem 0.5rem;
+  }
+  #overzicht #producten div a h4 {
+    height: 120px;
+  }
+  #overzicht #producten div a p {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #home div div a div {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+  }
+  #home div div a div img {
+    width: 150px;
+  }
+  #overzicht {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 5rem;
+  }
+  #overzicht #filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  #details {
+    height: 800px;
+    align-items: center;
+  }
+  #details #stars {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  #overzicht #producten div {
+    width: 100%;
+  }
+  #overzicht #producten div a {
+    width: 230px;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+  }
+  #overzicht #producten div a div {
+    max-width: 150px;
+    height: 150px;
+  }
+  #overzicht #producten div a div img {
+    width: 150px;
+  }
+  #overzicht #producten div a h4 {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+  header div h1 {
+    font-size: 40px;
+  }
+  header div h2 {
+    font-size: 35px;
+  }
+  #home h3 {
+    font-size: 30px;
+  }
+  #home div div {
+    width: 80%;
+    flex-direction: column;
+  }
+  #home div div a {
+    margin: 1rem;
+  }
+  #home div div a div {
+    width: 250px;
+    height: 250px;
+  }
+  #home div div a div img {
+    width: 250px;
+  }
+  #overzicht #filters div div button {
+    width: 100px;
+  }
+  #overzicht #producten div {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 1rem;
+  }
+  #overzicht #producten div a {
+    width: 400px;
+    margin: 2rem;
+    padding: 1rem;
+  }
+  #overzicht #producten div a div {
+    width: 230px;
+    height: 230px;
+  }
+  #overzicht #producten div a div img {
+    width: 230px;
+  }
+  #overzicht #producten div a h4 {
+    height: 70px;
+    font-size: 25px;
+  }
+  #overzicht #producten div a p {
+    display: flex;
+  }
+  #details {
+    flex-direction: column;
+  }
+  #details img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav1 a img {
+    display: none;
+  }
+  .nav2 a img {
+    display: none;
+  }
+  #overzicht #nummers div {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav1 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #fff;
+  }
+  .nav1 div {
+    justify-content: center;
+  }
+  .nav1 div a {
+    font-size: 20px;
+    padding: 5px;
+    color: #29503c;
+  }
+  .nav1 div a button {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .nav2 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .nav2 div {
+    justify-content: center;
+  }
+  .nav2 div a {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .nav2 div a button {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .nav2 div a:hover {
+    color: #e2cb03;
+  }
+  .nav2 a #close {
+    display: flex;
+  }
+  header {
+    display: none;
+  }
+  #overzicht #filters div div {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #overzicht #filters div div button {
+    width: 40%;
+  }
+  #overzicht #producten {
+    width: 100%;
+  }
+  #overzicht #producten div {
+    width: 100%;
+  }
+  #overzicht #producten div a {
+    width: 300px;
+  }
+  #overzicht #producten div a h4 {
+    height: 100px;
+  }
+  #overzicht #producten div a p {
+    height: 200px;
+  }
+  #details {
+    width: 100%;
+  }
+  #details img {
+    width: 300px;
+  }
+  #inlog form {
+    width: 300px;
+  }
+  #inlog form div label {
+    font-size: 20px;
+  }
+  #inlog form div input {
+    width: 330px;
+  }
+  #inlog form button {
+    width: 300px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,879 @@
+//kleuren
+$color1: #e2cb03;
+$color2: #29503c;
+$color3: #fcfeef;
+$background: #fff;
+$doorzichtig: rgba(0, 0, 0, 0.46);
+
+//lettergrotes
+$sizeh1: 50px;
+$sizeh2: 40px;
+$sizeh3: 35px;
+$sizeh4: 30px;
+$sizeh5: 25px;
+$sizep: 20px;
+
+//fontfamilie
+$font1: 'Major Mono Display', monospace;
+$font2: 'Red Hat Display', sans-serif;
+$font3: 'Tilt Neon', sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  background-color: $background;
+  img {
+    width: 5rem;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    a {
+      text-decoration: none;
+      color: $color2;
+      font-size: $sizeh5;
+      font-family: $font2;
+      padding: 10px;
+      margin: 0 1rem;
+
+      button {
+        text-decoration: none;
+        color: $color2;
+        font-size: $sizeh5;
+        font-family: $font2;
+        padding: 10px;
+        background-color: $color3;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: $color2;
+          color: $color3;
+          border: 1px solid $color3;
+          cursor: pointer;
+        }
+      }
+
+
+      &:hover {
+        color: $color1;
+      }
+    }
+    #cart img {
+      width: 3rem;
+    }
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $doorzichtig;
+  height: 850px;
+
+  div {
+    align-items: center;
+    width: 100%;
+    padding: 10rem 0;
+
+    h1 {
+      font-family: $font1;
+      font-size: $sizeh1;
+      color: $color3;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: $font2;
+      font-size: $sizeh2;
+      color: $color1;
+      text-align: center;
+    }
+  }
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: $background;
+  padding: 5rem 20rem;
+
+  h3 {
+    font-size: $sizeh3;
+    color: $color2;
+    font-family: $font3;
+    padding: 1rem 0;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: $color3;
+        border-radius: 1rem;
+        margin: 0 1rem;
+        font-family: $font2;
+        font-size: $sizep;
+        color: $color2;
+        text-decoration: none;
+
+        div {
+          width: 200px;
+          height: 200px;
+          margin: 20px 0;
+
+          img {
+            width: 200px;
+          }
+        }
+
+        &:hover {
+          color: $color3;
+          background-color: $color2;
+        }
+      }
+    }
+
+    a {
+      font-family: $font2;
+      font-size: $sizep;
+      color: $color2;
+      text-decoration: none;
+      margin: 1rem;
+
+      &:hover {
+        color: $color1;
+      }
+    }
+  }
+}
+
+#overzicht {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 5rem;
+  background-color: $background;
+
+  #filters {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        color: $color2;
+        font-family: $font3;
+        font-size: $sizep;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+
+        button {
+          border: none;
+          border-radius: 0.5rem;
+          background-color: $color3;
+          color: $color2;
+          font-family: $font2;
+          font-size: $sizep;
+          margin: 10px;
+          padding: 5px;
+          cursor: pointer;
+          width: 150px;
+
+          &:hover {
+            border: 1px solid $color3;
+            background-color: $color2;
+            color: $color3;
+          }
+
+          &:active {
+            border: 1px solid $color3;
+            background-color: $color2;
+            color: $color3;
+          }
+        }
+      }
+    }
+  }
+
+  #producten {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+
+      a {
+        text-decoration: none;
+        color: $color2;
+        background-color: $color3;
+        width: 320px;
+        border-radius: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0.5rem;
+        padding: 1rem;
+
+        div {
+          width: 200px;
+          height: 200px;
+
+          img {
+            max-width: 200px;
+            max-height: 200px;
+            margin: 0.5rem auto;
+          }
+        }
+
+        h4 {
+          font-family: $font3;
+          font-size: $sizeh4;
+          height: 80px;
+        }
+
+        p {
+          font-family: $font2;
+          font-size: $sizep;
+          height: 100px;
+        }
+
+        h5 {
+          font-family: $font1;
+          font-size: $sizeh5;
+          align-self: flex-end;
+        }
+
+        &:hover {
+          color: $color3;
+          background-color: $color2;
+        }
+      }
+    }
+
+    #nummers {
+      div {
+        a {
+          background-color: $background;
+          font-family: $font1;
+          width: 20px;
+
+          &:hover {
+            color: $color1;
+          }
+        }
+      }
+    }
+  }
+}
+
+#inlog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: $background;
+  padding: 10.1rem 0;
+
+  img {
+    width: 250px;
+    margin: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+
+    div {
+      margin: 1rem 0;
+
+      label {
+        color: $color2;
+        font-family: $font3;
+        font-size: $sizeh5;
+      }
+
+      input {
+        background-color: $color3;
+        color: $color1;
+        border: none;
+        font-size: $sizep;
+        padding: 1rem;
+        width: 500px;
+      }
+    }
+
+    a {
+      color: $color2;
+      font-size: $sizep;
+      font-family: $font2;
+      text-decoration: none;
+      margin: 0.5rem;
+
+      &:hover {
+        color: $color1;
+      }
+    }
+
+
+    button {
+      background-color: $color2;
+      color: $color3;
+      border: none;
+      font-family: $font3;
+      font-size: $sizep;
+      border-radius: 1rem;
+      width: 400px;
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: $color3;
+        color: $color2;
+        border: 1px solid $color2;
+      }
+    }
+
+
+  }
+}
+
+#details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $background;
+  padding: 2rem 10rem;
+
+  img {
+    width: 55%;
+    margin: 2rem;
+    height: fit-content;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 2rem;
+
+    h2 {
+      color: $color2;
+      font-size: $sizeh2;
+      font-family: $font1;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $color2;
+      font-size: $sizep;
+      font-family: $font2;
+      height: 100px;
+    }
+
+    h3 {
+      color: $color2;
+      font-size: $sizeh3;
+      font-family: $font3;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      color: $color2;
+      font-size: $sizep;
+      font-family: $font2;
+      background-color: $color3;
+      border: 1px solid $color2;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100px;
+      padding: 1rem;
+
+      #green {
+        width: 20px;
+        padding: 0;
+        margin: 0;
+      }
+
+      #white {
+        display: none;
+      }
+
+      &:hover {
+        color: $color3;
+        background-color: $color2;
+
+        #white {
+          display: block;
+          width: 20px;
+          padding: 0;
+          margin: 0;
+        }
+
+        #green {
+          display: none;
+        }
+      }
+    }
+
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      a {
+        width: 30px;
+        margin: 1rem 0.5rem;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $color2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+
+  div {
+    h3 {
+      font-size: $sizeh3;
+      font-family: $font3;
+      color: $color1;
+    }
+
+    p {
+      font-size: $sizep;
+      font-family: $font2;
+      color: $color3;
+    }
+
+    div {
+      a {
+        margin: 0 0.5rem;
+
+        img {
+          width: 50px;
+        }
+      }
+    }
+
+    img {
+      width: 100px;
+      margin: 0.5rem auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  header {
+    width: 100%;
+  }
+
+  #home {
+    padding: 5rem 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    h3 {
+      padding: 1rem 0;
+      align-self: center;
+      display: flex;
+    }
+  }
+
+  #overzicht {
+    padding: 2rem;
+    width: 100%;
+    overflow-x: hidden;
+
+    #producten {
+      width: 75%;
+
+      div {
+        a {
+          width: 300px;
+          margin: 1rem 0.5rem;
+          padding: 1rem 0.5rem;
+
+          h4 {
+            height: 120px;
+          }
+
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #home {
+    div {
+      div {
+        a {
+          div {
+            width: 150px;
+            height: 150px;
+            margin: 20px 0;
+
+            img {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #overzicht {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 5rem;
+
+    #filters {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+
+  #details {
+    height: 800px;
+    align-items: center;
+
+    #stars {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #overzicht {
+    #producten {
+      div {
+        width: 100%;
+
+        a {
+          width: 230px;
+          margin: 1rem 0.5rem;
+          padding: 0.5rem;
+
+          div {
+            max-width: 150px;
+            height: 150px;
+
+            img {
+              width: 150px;
+            }
+          }
+
+          h4 {
+            height: 120px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    div {
+      h1 {
+        font-size: $sizeh2;
+      }
+
+      h2 {
+        font-size: $sizeh3;
+      }
+    }
+  }
+
+  #home {
+    h3 {
+      font-size: $sizeh4;
+    }
+
+    div {
+      div {
+        width: 80%;
+        flex-direction: column;
+
+        a {
+          margin: 1rem;
+
+          div {
+            width: 250px;
+            height: 250px;
+
+            img {
+              width: 250px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #overzicht {
+    #filters {
+      div {
+        div {
+          button {
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    #producten {
+      div {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 1rem;
+
+        a {
+          width: 400px;
+          margin: 2rem;
+          padding: 1rem;
+
+          div {
+            width: 230px;
+            height: 230px;
+
+            img {
+              width: 230px;
+            }
+          }
+
+          h4 {
+            height: 70px;
+            font-size: $sizeh5;
+          }
+
+          p {
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+
+  #details {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav1 {
+    a {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .nav2 {
+    a {
+      img {
+        display: none;
+      }
+    }
+  }
+  #overzicht {
+    #nummers {
+      div {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav1 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: $background;
+
+    div {
+      justify-content: center;
+
+      a {
+        font-size: $sizep;
+        padding: 5px;
+        color: $color2;
+
+        button {
+          font-size: $sizep;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .nav2 {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    div {
+      justify-content: center;
+
+      a {
+        font-size: $sizep;
+        padding: 5px;
+
+        button {
+          font-size: $sizep;
+          padding: 5px;
+        }
+
+        &:hover {
+          color: $color1;
+        }
+      }
+    }
+
+    a {
+      #close {
+        display: flex;
+      }
+    }
+  }
+
+  header {
+    display: none;
+  }
+
+  #overzicht {
+    #filters {
+      div {
+        div {
+          flex-wrap: wrap;
+          flex-direction: row;
+
+          button {
+            width: 40%;
+          }
+        }
+      }
+    }
+
+    #producten {
+      width: 100%;
+
+      div {
+        width: 100%;
+
+        a {
+          width: 300px;
+
+          h4 {
+            height: 100px;
+          }
+
+          p {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+  #details {
+    width: 100%;
+
+    img {
+      width: 300px;
+    }
+  }
+  #inlog {
+    form {
+      width: 300px;
+
+      div {
+        label {
+          font-size: $sizep;
+        }
+
+        input {
+          width: 330px;
+        }
+      }
+
+      button {
+        width: 300px;
+      }
+    }
+  }
+}
