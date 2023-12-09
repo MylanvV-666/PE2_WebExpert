@@ -1,7 +1,4 @@
 <script>
-import products from "./product.json"
-import {defineComponent} from "vue"
-
 </script>
 
 <template>

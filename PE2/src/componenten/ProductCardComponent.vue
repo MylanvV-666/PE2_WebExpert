@@ -1,15 +1,22 @@
 <script>
-
+import product from "../product.json"
+export default {
+    props: {
+        product: Object
+    }
+};
 </script>
 
 <template>
     <router-link to="/Shop/:ID">
         <div>
-            <img src="css/assets/typewriter.png" alt="foto">
+            <img :src="product.afbeelding" :alt="product.titel">
         </div>
-        <h4>dolfijnen typewriter</h4>
-        <p>als je een dolfijn hebt die je niets kan verstaan is dit misschien een handige tool.</p>
-        <h5>€500</h5>
+        <h3>{{ product.titel }}</h3>
+        <p>{{ product.omschrijving }}</p>
+        <h3>Prijs: €{{ product.prijs.toFixed(2) }}</h3>
+        <p>BTW: {{ product.BTW * 100 }}%</p>
+        <p>Voorraad: {{ product.stock }}</p>
     </router-link>
 </template>
 

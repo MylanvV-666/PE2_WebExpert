@@ -3,7 +3,7 @@
 
 <template>
     <main id="inlog">
-        <img src="PE2/src/assets/logo.png" alt="logo">
+        <img src="@/assets/logo.png" alt="logo">
         <form>
             <div>
                 <label for="mail">E-mail</label>

@@ -1,195 +1,222 @@
-{
-  "name": "product",
-  "version": "1.0.0",
-  "description": "producten voor op de pagina",
-  "main": "main.js",
-  "scripts": {
-    "products": [
-      {
-        "ID": "001",
-        "titel": "Doorzichtige tent",
-        "omschrijving": "Een tent voor degene die zich nooit schamen.",
-        "afbeelding": "./src/assets/tent.png",
-        "prijs": "€50",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "002",
-        "titel": "Safety napkins",
-        "omschrijving": "Servetten waarbij je jou veilig kan voelen. 20 stuks per aankoop.",
-        "afbeelding": "./src/assets/napkin.png",
-        "prijs": "€10",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "003",
-        "titel": "Warmte ring",
-        "omschrijving": "Een ring die je warm houd. Pas wel op dat je jou vinders niet verbrand. Tip: ook leuk als trouwring?",
-        "afbeelding": "./src/assets/firering.png",
-        "prijs": "€40",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "004",
-        "titel": "Glazen muis",
-        "omschrijving": "Een muis voor de show want ja niemand wil glas in zijn of haar hand hebben zitten.",
-        "afbeelding": "./src/assets/mouse.png",
-        "prijs": "€30",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "005",
-        "titel": "Sharing-is-caring stofzuiger",
-        "omschrijving": "Een ruzzie oplossen over wie moet stofzuigen was nog nooit zo makkelijk.",
-        "afbeelding": "./src/assets/stofzuiger.png",
-        "prijs": "€99,99",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "006",
-        "titel": "Inspirerende paperclip",
-        "omschrijving": "Een paperclip die je inspireerd om beter te zijn voor anderen. En je kan er bundels mee maken op een fancy manier.",
-        "afbeelding": "./src/assets/paperclip.png",
-        "prijs": "€5",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "007",
-        "titel": "Apen glas",
-        "omschrijving": "Een wijnglas voor een aap. Speciaal voor de apen die ook eens een wijntje lusten. 4 stuks",
-        "afbeelding": "./src/assets/bananaglass.png",
-        "prijs": "€30",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "008",
-        "titel": "Sharkayak",
-        "omschrijving": "Een kayak met een haaien print. Speciaal voor de mensen die een Haai willen lokken. Geen idee waarom maar succes met te overleven. PS: Wij zijn niet verantwoordelijk voor enige schade.",
-        "afbeelding": "./src/assets/sharkayak.jpg",
-        "prijs": "€120",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "009",
-        "titel": "Scrunchie met USB",
-        "omschrijving": "Geen idee wat de usb doet maar het geeft wel een fancy look.",
-        "afbeelding": "./src/assets/haarband.png",
-        "prijs": "€2",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "010",
-        "titel": "Kings portemonee",
-        "omschrijving": "Een koning heeft veel geld geen wonder dat hij zo een grote nodig heeft.",
-        "afbeelding": "./src/assets/portemonee.jpeg",
-        "prijs": "€1000",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "011",
-        "titel": "Ongemakkelijke hoed",
-        "omschrijving": "De perfecte hoed voor iemand die graag klaagt over van alles en nog wat.",
-        "afbeelding": "./src/assets/hoed.jpg",
-        "prijs": "€10",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "012",
-        "titel": "Dolfijnen typemachine",
-        "omschrijving": "Als je een dolfijn hebt die je niet kan verstaan is dit misschien een handige tool.",
-        "afbeelding": "./src/assets/typewriter.png",
-        "prijs": "€500",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "013",
-        "titel": "Coole koelkast",
-        "omschrijving": "Een koelkast met swag.",
-        "afbeelding": "",
-        "prijs": "€250",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "014",
-        "titel": "Airdown fles",
-        "omschrijving": "Je doet er frisdrank in en door de geur van water gaat het naar water smaken. Handig wanneer je enkel water lust maar op een feestje toch eens iets anders wil drinken.",
-        "afbeelding": "",
-        "prijs": "€45",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "015",
-        "titel": "Realistische Kenpop",
-        "omschrijving": "Voor degene die hun kinderen een traumatische ervaring willen geven.",
-        "afbeelding": "tent.png",
-        "prijs": "€15",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "016",
-        "titel": "Gaten sok",
-        "omschrijving": "Sokken waar de tenen en hiel vanaf gehaald zijn zodat je op die plaatsen geen gaten meer kan creeëren.",
-        "afbeelding": "",
-        "prijs": "€3",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "017",
-        "titel": "glazen deur met kijkgaatje",
-        "omschrijving": "Het kijkgaatje heeft niet veel nut.",
-        "afbeelding": "",
-        "prijs": "€450",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "018",
-        "titel": "Realistische Barbiepop",
-        "omschrijving": "Voor degene die hun kinderen een traumatische ervaring willen geven.",
-        "afbeelding": "",
-        "prijs": "€15",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "019",
-        "titel": "Badtweetje",
-        "omschrijving": "Een badeentje met twee eendenhoofden.",
-        "afbeelding": "",
-        "prijs": "€1,50",
-        "BTW": "€0,10",
-        "stock": 10
-      },
-      {
-        "ID": "020",
-        "titel": "Gucci wafelijzer",
-        "omschrijving": "Een wafelijzer voor de highclass-bitches.",
-        "afbeelding": "",
-        "prijs": "€999,99",
-        "BTW": "€0,10",
-        "stock": 10
-      }
-    ]
+[
+  {
+    "ID": 1,
+    "titel": "Doorzichtige tent",
+    "omschrijving": "Een tent voor degene die zich nooit schamen.",
+    "afbeelding": "./src/assets/tent.png",
+    "prijs": 50,
+    "BTW": 0.10,
+    "stock": 11,
+    "weirdness": "weird",
+    "bruikbaar": "ja"
   },
-  "keywords": [
-    "products"
-  ],
-  "author": "mylan",
-  "license": "ISC"
-}
+  {
+    "ID": 2,
+    "titel": "Safety napkins",
+    "omschrijving": "Servetten waarbij je jou veilig kan voelen. 20 stuks per aankoop.",
+    "afbeelding": "./src/assets/napkin.png",
+    "prijs": 10,
+    "BTW": 0.10,
+    "stock": 12,
+    "weirdness": "boring",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 3,
+    "titel": "Warmte ring",
+    "omschrijving": "Een ring die je warm houd. Pas wel op dat je jou vinders niet verbrand. Tip: ook leuk als trouwring?",
+    "afbeelding": "./src/assets/firering.png",
+    "prijs": 40,
+    "BTW": 0.10,
+    "stock": 15,
+    "weirdness": "weird",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 4,
+    "titel": "Glazen muis",
+    "omschrijving": "Een muis voor de show want ja niemand wil glas in zijn of haar hand hebben zitten.",
+    "afbeelding": "./src/assets/mouse.png",
+    "prijs": 30,
+    "BTW": 0.10,
+    "stock": 18,
+    "weirdness": "boring",
+    "bruikbaar": "ja"
+  },
+  {
+    "ID": 5,
+    "titel": "Sharing-is-caring stofzuiger",
+    "omschrijving": "Een ruzzie oplossen over wie moet stofzuigen was nog nooit zo makkelijk.",
+    "afbeelding": "./src/assets/stofzuiger.png",
+    "prijs": 99.99,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "crazy af",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 6,
+    "titel": "Inspirerende paperclip",
+    "omschrijving": "Een paperclip die je inspireerd om beter te zijn voor anderen. En je kan er bundels mee maken op een fancy manier.",
+    "afbeelding": "./src/assets/paperclip.png",
+    "prijs": 5,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "fun",
+    "bruikbaar": "ja"
+  },
+  {
+    "ID": 7,
+    "titel": "Apen glas",
+    "omschrijving": "Een wijnglas voor een aap. Speciaal voor de apen die ook eens een wijntje lusten. 4 stuks",
+    "afbeelding": "./src/assets/bananaglass.png",
+    "prijs": 30,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "crazy af",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 8,
+    "titel": "Sharkayak",
+    "omschrijving": "Een kayak met een haaien print. Speciaal voor de mensen die een Haai willen lokken. Geen idee waarom maar succes met te overleven. PS: Wij zijn niet verantwoordelijk voor enige schade.",
+    "afbeelding": "./src/assets/sharkayak.jpg",
+    "prijs": 120,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "fun",
+    "bruikbaar": "ja"
+  },
+  {
+    "ID": 9,
+    "titel": "Scrunchie met USB",
+    "omschrijving": "Geen idee wat de usb doet maar het geeft wel een fancy look.",
+    "afbeelding": "./src/assets/haarband.png",
+    "prijs": 2,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "boring",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 10,
+    "titel": "Kings portemonee",
+    "omschrijving": "Een koning heeft veel geld geen wonder dat hij zo een grote nodig heeft.",
+    "afbeelding": "./src/assets/portemonee.jpeg",
+    "prijs": 1000,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "weird",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 11,
+    "titel": "Ongemakkelijke hoed",
+    "omschrijving": "De perfecte hoed voor iemand die graag klaagt over van alles en nog wat.",
+    "afbeelding": "./src/assets/hoed.jpg",
+    "prijs": 10,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "fun",
+    "bruikbaar": "ja"
+  },
+  {
+    "ID": 12,
+    "titel": "Dolfijnen typemachine",
+    "omschrijving": "Als je een dolfijn hebt die je niet kan verstaan is dit misschien een handige tool.",
+    "afbeelding": "./src/assets/typewriter.png",
+    "prijs": 500,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "crazy af",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 13,
+    "titel": "Coole koelkast",
+    "omschrijving": "De perfecte man voor golddiggers. Geld, eten en een hot lichaam. 3 in 1!",
+    "afbeelding": "./src/assets/coole-koelkast.png",
+    "prijs": 250,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "crazy af",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 14,
+    "titel": "Airdown fles",
+    "omschrijving": "Je doet er frisdrank in en door de geur van water gaat het naar water smaken. Handig wanneer je enkel water lust maar op een feestje toch eens iets anders wil drinken.",
+    "afbeelding": "./src/assets/airdownfles.png",
+    "prijs": 45,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "boring",
+    "bruikbaar": "ja"
+  },
+  {
+    "ID": 15,
+    "titel": "Realistische Kenpop",
+    "omschrijving": "Voor degene die hun kinderen een traumatische ervaring willen geven.",
+    "afbeelding": "./src/assets/ken.png",
+    "prijs": 15,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "crazy af",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 16,
+    "titel": "Gaten sok",
+    "omschrijving": "Sokken waar de tenen en hiel vanaf gehaald zijn zodat je op die plaatsen geen gaten meer kan creeëren.",
+    "afbeelding": "./src/assets/sokken.png",
+    "prijs": 3,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "boring",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 17,
+    "titel": "glazen deur met kijkgaatje",
+    "omschrijving": "Het kijkgaatje heeft niet veel nut.",
+    "afbeelding": "./src/assets/deur.png",
+    "prijs": 450,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "fun",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 18,
+    "titel": "Realistische Barbiepop",
+    "omschrijving": "Voor degene die hun kinderen een traumatische ervaring willen geven.",
+    "afbeelding": "./src/assets/barbie.png",
+    "prijs": 15,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "crazy af",
+    "bruikbaar": "nee"
+  },
+  {
+    "ID": 19,
+    "titel": "Badtweetje",
+    "omschrijving": "Een badeentje met twee eendenhoofden.",
+    "afbeelding": "./src/assets/eend.png",
+    "prijs": 1.50,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "weird",
+    "bruikbaar": "ja"
+  },
+  {
+    "ID": 20,
+    "titel": "Gucci wafelijzer",
+    "omschrijving": "Een wafelijzer voor de highclass-bitches.",
+    "afbeelding": "./src/assets/wafelijzer.png",
+    "prijs": 999.99,
+    "BTW": 0.10,
+    "stock": 10,
+    "weirdness": "fun",
+    "bruikbaar": "ja"
+  }
+]

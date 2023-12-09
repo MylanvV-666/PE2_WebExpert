@@ -110,9 +110,10 @@ header div h2 {
   border-radius: 1rem;
   margin: 0 1rem;
   font-family: "Red Hat Display", sans-serif;
-  font-size: 20px;
   color: #29503c;
   text-decoration: none;
+  max-width: 20rem;
+  height: 40rem;
 }
 #home div div a div {
   width: 200px;
@@ -122,9 +123,18 @@ header div h2 {
 #home div div a div img {
   width: 200px;
 }
+#home div div a p {
+  font-size: 20px;
+}
+#home div div a h3 {
+  font-size: 35px;
+}
 #home div div a:hover {
   color: #fcfeef;
   background-color: #29503c;
+}
+#home div div a:hover h3 {
+  color: #fcfeef;
 }
 #home div a {
   font-family: "Red Hat Display", sans-serif;

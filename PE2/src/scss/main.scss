@@ -139,9 +139,10 @@ header {
         border-radius: 1rem;
         margin: 0 1rem;
         font-family: $font2;
-        font-size: $sizep;
         color: $color2;
         text-decoration: none;
+        max-width: 20rem;
+        height: 40rem;
 
         div {
           width: 200px;
@@ -152,10 +153,19 @@ header {
             width: 200px;
           }
         }
+        p {
+          font-size: $sizep;
+        }
+        h3 {
+          font-size: $sizeh3;
+        }
 
         &:hover {
           color: $color3;
           background-color: $color2;
+        }
+        &:hover h3 {
+          color: $color3;
         }
       }
     }
