@@ -1,10 +1,9 @@
 <script>
-import product from "../product.json"
 export default {
     props: {
         product: Object
     }
-};
+}
 </script>
 
 <template>

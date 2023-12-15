@@ -190,65 +190,58 @@ header div h2 {
   background-color: #29503c;
   color: #fcfeef;
 }
-#overzicht #filters div div button:active {
-  border: 1px solid #fcfeef;
-  background-color: #29503c;
-  color: #fcfeef;
-}
 #overzicht #producten {
   display: flex;
-  flex-direction: column;
-  width: 80%;
+  flex-wrap: wrap;
 }
-#overzicht #producten div {
+#overzicht #producten .product-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 25%;
 }
-#overzicht #producten div a {
-  text-decoration: none;
-  color: #29503c;
-  background-color: #fcfeef;
-  width: 320px;
-  border-radius: 2rem;
+#overzicht #producten .product-row #product {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 1rem 0.5rem;
   padding: 1rem;
+  background-color: #fcfeef;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  color: #29503c;
+  text-decoration: none;
+  height: 40rem;
+  width: 20rem;
 }
-#overzicht #producten div a div {
+#overzicht #producten .product-row #product div {
   width: 200px;
   height: 200px;
+  margin: 20px 0;
 }
-#overzicht #producten div a div img {
-  max-width: 200px;
-  max-height: 200px;
-  margin: 0.5rem auto;
+#overzicht #producten .product-row #product div img {
+  max-width: 250px;
+  height: 200px;
 }
-#overzicht #producten div a h4 {
-  font-family: "Tilt Neon", sans-serif;
-  font-size: 30px;
-  height: 80px;
-}
-#overzicht #producten div a p {
-  font-family: "Red Hat Display", sans-serif;
+#overzicht #producten .product-row #product p {
   font-size: 20px;
-  height: 100px;
 }
-#overzicht #producten div a h5 {
-  font-family: "Major Mono Display", monospace;
-  font-size: 25px;
-  align-self: flex-end;
+#overzicht #producten .product-row #product h3 {
+  font-size: 35px;
 }
-#overzicht #producten div a:hover {
+#overzicht #producten .product-row #product:hover {
   color: #fcfeef;
   background-color: #29503c;
+}
+#overzicht #producten .product-row #product:hover h3 {
+  color: #fcfeef;
 }
 #overzicht #producten #nummers div a {
   background-color: #fff;
   font-family: "Major Mono Display", monospace;
   width: 20px;
+}
+#overzicht #producten #nummers div a .clearfix {
+  clear: both;
 }
 #overzicht #producten #nummers div a:hover {
   color: #e2cb03;
