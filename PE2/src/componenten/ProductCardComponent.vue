@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <router-link to="/Shop/:ID">
+    <router-link :to="'/Shop/' + product.ID">
         <div>
             <img :src="product.afbeelding" :alt="product.titel">
         </div>

@@ -310,41 +310,43 @@ header div h2 {
 }
 
 #details {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   background-color: #fff;
   padding: 2rem 10rem;
 }
-#details img {
+#details div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#details div img {
   width: 55%;
   margin: 2rem;
   height: fit-content;
 }
-#details div {
+#details div div {
   display: flex;
   flex-direction: column;
   margin: 3rem 2rem;
 }
-#details div h2 {
+#details div div h2 {
   color: #29503c;
   font-size: 40px;
   font-family: "Major Mono Display", monospace;
   margin-bottom: 1rem;
 }
-#details div p {
+#details div div p {
   color: #29503c;
   font-size: 20px;
   font-family: "Red Hat Display", sans-serif;
   height: 100px;
 }
-#details div h3 {
+#details div div h3 {
   color: #29503c;
   font-size: 35px;
   font-family: "Tilt Neon", sans-serif;
   margin-bottom: 1rem;
 }
-#details div button {
+#details div div button {
   color: #29503c;
   font-size: 20px;
   font-family: "Red Hat Display", sans-serif;
@@ -359,37 +361,37 @@ header div h2 {
   width: 100px;
   padding: 1rem;
 }
-#details div button #green {
+#details div div button #green {
   width: 20px;
   padding: 0;
   margin: 0;
 }
-#details div button #white {
+#details div div button #white {
   display: none;
 }
-#details div button:hover {
+#details div div button:hover {
   color: #fcfeef;
   background-color: #29503c;
 }
-#details div button:hover #white {
+#details div div button:hover #white {
   display: block;
   width: 20px;
   padding: 0;
   margin: 0;
 }
-#details div button:hover #green {
+#details div div button:hover #green {
   display: none;
 }
-#details div div {
+#details div div div {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-#details div div a {
+#details div div div a {
   width: 30px;
   margin: 1rem 0.5rem;
 }
-#details div div a img {
+#details div div div a img {
   width: 30px;
 }
 

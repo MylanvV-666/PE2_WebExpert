@@ -75,12 +75,9 @@ export default defineComponent({
         </section>
         <section id="producten">
             <div class="product-row" v-for="product in paginatedProducts" :key="product.ID">
-                <!-- Use router-link for navigation to product details -->
-                <router-link :to="{ name: 'Product', params: { id: product.ID } }">
-                    <div>
-                        <ProductCardComponent :product="product" id="product" />
-                    </div>
-                </router-link>
+                <div>
+                    <ProductCardComponent :product="product" id="product" />
+                </div>
             </div>
             <nav id="nummers">
                 <div>
