@@ -478,6 +478,27 @@ header {
   }
 }
 
+#cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: $background;
+  padding: 2rem 10rem;
+
+  #cart-items {
+    flex-direction: column;
+    width: 75%;
+    height: 600px;
+  }
+  #cart-summary {
+    flex-direction: column;
+    width: 25%;
+    height: 600px;
+    border-radius: 20px;
+    border: 2px solid $color2;
+  }
+}
+
 footer {
   background-color: $color2;
   display: flex;

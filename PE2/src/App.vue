@@ -1,4 +1,9 @@
 <script>
+export default {
+    mounted() {
+        this.$store.commit('updateCartFromLocalStorage')
+    }
+}
 </script>
 
 <template>

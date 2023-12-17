@@ -9,22 +9,25 @@ export default defineComponent({
     components: { FooterComponent, NotFound },
     data() {
         return {
-            product: null
+            product: "",
+            quantity: null
         }
+    },
+    computed: {
+        product_total() {
+            return this.$store.getters.productQuantity(this.product)
+        },
     },
     methods: {
         addToCart() {
-            console.log('Product:', this.product); // Voeg deze regel toe om productgegevens te bekijken
-            if (this.product && this.product.stock > 0) {
-                console.log('Product toegevoegd aan winkelwagen:', this.product);
-            } else {
-                console.log('Product is uitverkocht!');
-            }
+            this.$store.commit('addToCart', this.product)
         }
     },
     created() {
         const productId = this.$route.params.id; // Haal het product-ID op vanuit de route
         this.product = products.find(product => product.ID === Number(productId));
+
+
     }
 })
 </script>
@@ -40,10 +43,15 @@ export default defineComponent({
                 <p>{{ product.omschrijving }}</p>
                 <h3>€{{ product.prijs?.toFixed(2) }}</h3>
                 <p>BTW: {{ product.BTW * 100 }}</p>
-                <button @click="addToCart" :disabled="product.stock === 0">
-                    <img src="@/assets/shopping-cart-green.png" alt="AddToCart" id="green">
-                    <img src="@/assets/shopping-cart.png" alt="AddToCart" id="white">
-                </button>
+                <div id="cart_total_in_productview">
+                    <button @click="addToCart">
+                        <img src="@/assets/shopping-cart-green.png" alt="AddToCart" id="green">
+                        <img src="@/assets/shopping-cart.png" alt="AddToCart" id="white">
+                    </button>
+                    <div class="cart-total" v-if="product_total">
+                        <p>In cart: {{ product_total }}</p>
+                    </div>
+                </div>
                 <p v-if="product.stock === 0" style="color: red;">Product is uitverkocht</p>
                 <p v-else-if="product.stock > 0" style="color: orange;">Nog {{ product.stock }} producten over!</p>
             </div>
@@ -55,4 +63,11 @@ export default defineComponent({
 </template>
 
 <style>
+#cart_total_in_productview {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+    height: 50px;
+}
 </style>

@@ -395,6 +395,26 @@ header div h2 {
   width: 30px;
 }
 
+#cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  padding: 2rem 10rem;
+}
+#cart #cart-items {
+  flex-direction: column;
+  width: 75%;
+  height: 600px;
+}
+#cart #cart-summary {
+  flex-direction: column;
+  width: 25%;
+  height: 600px;
+  border-radius: 20px;
+  border: 2px solid #29503c;
+}
+
 footer {
   background-color: #29503c;
   display: flex;
