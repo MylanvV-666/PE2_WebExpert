@@ -9,18 +9,19 @@ export default {
 </script>
 
 <template>
-  <div class="cart-summary-payment-card">
-      <h3>Cart Total: {{ cart_total.toFixed(2) }}</h3>
-      <router-link to="/CheckOut"><button class="view-product-button">Verder naar betalen</button></router-link>
+  <div class="cart-summary-payment-card-for-Checkout">
+      <h3>Cart Total incl. BTW: €{{ cart_total.toFixed(2) }}</h3>
   </div>
 </template>
 
 <style lang="scss">
-.cart-summary-payment-card {
-  border: 1px solid #e2cb03;
-  border-radius: 15px;
-  min-height: 200px;
+.cart-summary-payment-card-for-Checkout {
+  min-height: 100px;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 600px;
 
   h3 {
     color: #29503c;
@@ -38,7 +39,6 @@ export default {
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    margin-top: 25px;
 
     &:hover {
       color: #29503c;

@@ -1,21 +1,16 @@
 <script>
-export default {
-    data() {
-        return {
-        }
-    }
-}
 </script>
 
 <template>
-    <header>
+    <nav>
+        <router-link to="/"><img src="../assets/logo.png" alt="logo"/></router-link>
         <div>
-            <h1>Random shop</h1>
-            <h2>De shop waar rare objecten die je nooit zal gebruiken verkocht worden.<br>Maar die je stiekem wel wil
-                hebben.
-            </h2>
+            <router-link to="/">Home</router-link>
+            <router-link to="/Shop">Shop</router-link>
+            <router-link to="/Cart" id="cart"><img src="../assets/shopping-cart-green.png" alt="cart"></router-link>
+            <router-link to="/Login" id="login"><button>Login</button></router-link>
         </div>
-    </header>
+    </nav>
 </template>
 
 <style>

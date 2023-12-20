@@ -1,0 +1,17 @@
+[
+  {
+    "klant": 1,
+    "voornaam": "Test",
+    "achternaam": "de Tester",
+    "email": "tester@test.be",
+    "locatie": {
+      "straat": "straat",
+      "huisnr": "100",
+      "gemeente": "Hasselt",
+      "postcode": 3500
+    },
+    "wachtwoord": "test@test",
+    "gsm": "0123 45 67 89",
+    "rekening": "BE12 3456 7890 1112"
+  }
+]

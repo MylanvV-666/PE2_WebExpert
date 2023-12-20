@@ -6,7 +6,7 @@ export default {
           return this.product.omschrijving.substring(0, 120)
         },
         item_cost() {
-            return this.product.prijs * this.product.quantity
+            return (this.product.prijs + this.product.BTW) * this.product.quantity
         }
     },
     methods: {
@@ -33,7 +33,7 @@ export default {
               <p>{{ product.quantity }}</p>
               <button class="add" @click="addToCart">+</button>
           </div>
-          <h5>Totale prijs: {{ item_cost.toFixed(2) }}</h5>
+          <h5>Totale prijs incl. BTW: {{ item_cost.toFixed(2) }}</h5>
       </div>
   </div>
 </template>
@@ -43,18 +43,24 @@ export default {
     display: flex;
     flex-direction: row;
     align-content: space-between;
-    width: 100%;
-    height: 150px;
+    width: 90%;
+    min-height: 150px;
+    border: 1px solid #29503c;
+    border-radius: 20px;
+    margin: 0 20px 20px 0;
 
     img {
+        min-width: 150px;
         max-height: 150px;
-        padding: 15px;
+        margin: 15px;
+        border-radius: 15px;
     }
 
     .uitleg {
         display: flex;
         flex-direction: column;
         padding: 15px;
+        min-width: 60%;
 
         h3 {
             color: #29503c;
@@ -69,9 +75,12 @@ export default {
         }
     }
 
-    .prijs_etc {
+    div.prijs_etc {
         display: flex;
         flex-direction: column;
+        align-items: start;
+        padding: 15px;
+        min-width: 20%;
 
         h5 {
             color: #29503c;
@@ -83,6 +92,7 @@ export default {
         .aantal {
             display: flex;
             flex-direction: row;
+            justify-content: space-evenly;
 
             p {
                 color: #29503c;

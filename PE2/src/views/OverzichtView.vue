@@ -4,11 +4,12 @@ import ProductCardComponent from "@/componenten/ProductCardComponent.vue";
 import FooterComponent from "@/componenten/FooterComponent.vue";
 import products from "@/product.json";
 import { useRouter } from "vue-router";
+import HeaderComponent from "@/componenten/HeaderComponent.vue";
 
 const router = useRouter();
 
 export default defineComponent({
-    components: { ProductCardComponent, FooterComponent },
+    components: {HeaderComponent, ProductCardComponent, FooterComponent },
     data() {
         return {
             products: products,
@@ -52,6 +53,7 @@ export default defineComponent({
 </script>
 
 <template>
+    <HeaderComponent/>
     <main id="overzicht">
         <section id="filters">
             <div>

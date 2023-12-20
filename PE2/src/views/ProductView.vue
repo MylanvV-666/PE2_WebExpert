@@ -3,14 +3,14 @@ import { defineComponent } from "vue";
 import FooterComponent from "@/componenten/FooterComponent.vue";
 import NotFound from "@/views/NotFoundView.vue";
 import products from "@/product.json";
+import HeaderComponent from "@/componenten/HeaderComponent.vue";
 
 
 export default defineComponent({
-    components: { FooterComponent, NotFound },
+    components: {HeaderComponent, FooterComponent, NotFound },
     data() {
         return {
-            product: "",
-            quantity: null
+            product: ""
         }
     },
     computed: {
@@ -33,6 +33,7 @@ export default defineComponent({
 </script>
 
 <template>
+    <HeaderComponent/>
     <main id="details">
         <div v-if="product">
             <div>

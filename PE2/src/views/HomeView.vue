@@ -12,6 +12,14 @@ export default defineComponent({
 
 <template>
     <HeaderComponent/>
+    <header>
+        <div>
+            <h1>Random shop</h1>
+            <h2>De shop waar rare objecten die je nooit zal gebruiken verkocht worden.<br>Maar die je stiekem wel wil
+                hebben.
+            </h2>
+        </div>
+    </header>
     <div id="home">
         <h3>Hot stuff</h3>
         <div>

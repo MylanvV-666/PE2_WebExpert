@@ -167,7 +167,7 @@
   {
     "ID": 16,
     "titel": "Gaten sok",
-    "omschrijving": "Sokken waar de tenen en hiel vanaf gehaald zijn zodat je op die plaatsen geen gaten meer kan creeëren.",
+    "omschrijving": "Sokken waar de tenen en hiel vanaf gehaald zijn zodat je op die plaatsen geen gaten meer kan creëren.",
     "afbeelding": "../src/assets/sokken.png",
     "prijs": 3,
     "BTW": 0.10,
