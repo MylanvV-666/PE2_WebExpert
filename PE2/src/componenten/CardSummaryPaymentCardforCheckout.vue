@@ -21,12 +21,13 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 600px;
+  width: 100%;
 
   h3 {
     color: #29503c;
     font-size: 35px;
     font-family: "Tilt Neon", sans-serif;
+    text-align: center;
   }
 
   button {

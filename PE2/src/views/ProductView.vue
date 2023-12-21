@@ -37,7 +37,7 @@ export default defineComponent({
     <main id="details">
         <div v-if="product">
             <div>
-                <img :src="product.afbeelding" alt="foto">
+                <img id="foto" :src="product.afbeelding" alt="foto">
             </div>
             <div>
                 <h2>{{ product.titel }}</h2>
@@ -57,18 +57,164 @@ export default defineComponent({
                 <p v-else-if="product.stock > 0" style="color: orange;">Nog {{ product.stock }} producten over!</p>
             </div>
         </div>
-        <div v-else>
-            <NotFound/>
-        </div>
     </main>
 </template>
 
-<style>
-#cart_total_in_productview {
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    width: 100%;
-    height: 50px;
+<style lang="scss">
+//kleuren
+$color1: #e2cb03;
+$color2: #29503c;
+$color3: #fcfeef;
+$background: #fff;
+$doorzichtig: rgba(0, 0, 0, 0.46);
+
+//lettergrotes
+$sizeh1: 50px;
+$sizeh2: 40px;
+$sizeh3: 35px;
+$sizeh4: 30px;
+$sizeh5: 25px;
+$sizep: 20px;
+
+//fontfamilie
+$font1: 'Major Mono Display', monospace;
+$font2: 'Red Hat Display', sans-serif;
+$font3: 'Tilt Neon', sans-serif;
+
+#details {
+    background-color: $background;
+    padding: 2rem 10rem;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        #foto {
+            width: 55%;
+            margin: 2rem;
+            height: fit-content;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: 3rem 2rem;
+
+            h2 {
+                color: $color2;
+                font-size: $sizeh2;
+                font-family: $font1;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: $color2;
+                font-size: $sizep;
+                font-family: $font2;
+                height: 100px;
+            }
+
+            h3 {
+                color: $color2;
+                font-size: $sizeh3;
+                font-family: $font3;
+                margin-bottom: 1rem;
+            }
+
+            button {
+                color: $color2;
+                font-size: $sizep;
+                font-family: $font2;
+                background-color: $color3;
+                border: 1px solid $color2;
+                border-radius: 0.5rem;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 100px;
+                padding: 1rem;
+                height: 50px;
+
+                #green {
+                    width: 20px;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                #white {
+                    display: none;
+                }
+
+                &:hover {
+                    color: $color3;
+                    background-color: $color2;
+
+                    #white {
+                        display: block;
+                        width: 20px;
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    #green {
+                        display: none;
+                    }
+                }
+            }
+
+
+            div {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin: 0;
+
+                div {
+                    margin-left: 10px;
+                }
+
+                a {
+                    width: 30px;
+                    margin: 1rem 0.5rem;
+
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    #details {
+        padding: 2rem 5rem;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            #foto {
+                width: 100%;
+                margin: 0;
+            }
+
+            div {
+                margin: 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    #details {
+        padding: 1rem;
+        div {
+            div {
+                margin: 0;
+            }
+        }
+    }
 }
 </style>

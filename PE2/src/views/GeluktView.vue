@@ -95,4 +95,45 @@ export default defineComponent({
         }
     }
 }
+@media screen and (max-width: 900px) {
+    #geluktpagina {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        min-height: 800px;
+
+        h1 {
+            color: #29503c;
+            font-size: 50px;
+            font-family: "Major Mono Display", monospace;
+            text-align: center;
+        }
+
+        #geel  {
+            color: #e2cb03;
+            font-size: 35px;
+            font-family: "Tilt Neon", sans-serif;
+            text-align: center;
+        }
+
+        #gelukt-producten {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+
+            #gebe {
+                width: 400px;
+                text-align: center;
+            }
+        }
+        a {
+            width: 75%;
+        }
+    }
+}
 </style>

@@ -242,4 +242,44 @@ export default defineComponent({
         }
     }
 }
+@media screen and (max-width: 1300px) {
+    #checkout {
+        flex-direction: column;
+
+        #checkout-producten {
+            width: 100%;
+        }
+        #checkout-gegevens {
+            width: 90%;
+            margin: 5rem auto;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    #checkout {
+        #checkout-gegevens {
+            #basis-gegevens {
+                #gegevenscard {
+                    #voornaam, #achternaam, #gemeente_stad, #postcode {
+                        width: 96.5%;
+                    }
+                    #email, #gsm, #bankrekeningnummer {
+                        width: 96.5%;
+                    }
+                    #straat, #nummer, #bus {
+                        width: 96.5%;
+                    }
+                }
+                #facturatie {
+                    #fgemeente_stad, #fpostcode {
+                        width: 96.5%;
+                    }
+                    #fstraat, #fnummer, #fbus {
+                        width: 96.5%;
+                    }
+                }
+            }
+        }
+    }
+}
 </style>
