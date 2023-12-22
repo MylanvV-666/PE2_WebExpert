@@ -56,7 +56,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $doorzichtig;
+    background-color: rgba(0, 0, 0, 0.46);
     height: 850px;
 
     div {
@@ -81,11 +81,11 @@ header {
                     display: flex;
                     flex-direction: column;
                     padding: 1rem;
-                    background-color: $color3;
+                    background-color: #fcfeef;
                     border-radius: 1rem;
                     margin: 0 1rem;
-                    font-family: $font2;
-                    color: $color2;
+                    font-family: 'Red Hat Display', sans-serif;
+                    color: #29503c;
                     text-decoration: none;
                     max-width: 20rem;
                     height: 40rem;
@@ -100,46 +100,46 @@ header {
                         }
                     }
                     p {
-                        font-size: $sizep;
+                        font-size: 20px;
                     }
                     h3 {
-                        font-size: $sizeh3;
+                        font-size: 35px;
                     }
 
                     &:hover {
-                        color: $color3;
-                        background-color: $color2;
+                        color: #fcfeef;
+                        background-color: #29503c;
                     }
                     &:hover h3 {
-                        color: $color3;
+                        color: #fcfeef;
                     }
                 }
             }
 
             a {
-                font-family: $font2;
-                font-size: $sizep;
-                color: $color2;
+                font-family: 'Red Hat Display', sans-serif;
+                font-size: 20px;
+                color: #29503c;
                 text-decoration: none;
                 margin: 1rem;
 
                 &:hover {
-                    color: $color1;
+                    color: #e2cb03;
                 }
             }
         }
 
         h1 {
-            font-family: $font1;
-            font-size: $sizeh1;
-            color: $color3;
+            font-family: 'Major Mono Display', monospace;
+            font-size: 50px;
+            color: #fcfeef;
             text-align: center;
         }
 
         h2 {
-            font-family: $font2;
-            font-size: $sizeh2;
-            color: $color1;
+            font-family: 'Red Hat Display', sans-serif;
+            font-size: 40px;
+            color: #e2cb03;
             text-align: center;
         }
     }
@@ -149,14 +149,73 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: $background;
+    background-color: #fff;
     padding: 5rem 20rem;
 
     h3 {
-        font-size: $sizeh3;
-        color: $color2;
-        font-family: $font3;
+        font-size: 35px;
+        color: #29503c;
+        font-family: 'Tilt Neon', sans-serif;
         padding: 1rem 0;
+    }
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        a {
+            color: #29503c;
+            font-family: "Tilt Neon", sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+         div {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             width: 100%;
+             div {
+                 width: 25%;
+                 a {
+                     display: flex;
+                     flex-direction: column;
+                     padding: 1rem;
+                     background-color: #fcfeef;
+                     border-radius: 1rem;
+                     margin: 1rem;
+                     font-family: $font2;
+                     color: #29503c;
+                     text-decoration: none;
+                     height: 40rem;
+                     width: 100%;
+                     div {
+                         width: 200px;
+                         height: 200px;
+                         margin: 20px 0;
+                         img {
+                             max-width: 250px;
+                             height: 200px;
+                         }
+                     }
+                     p {
+                         font-size: $sizep;
+                     }
+                     h3 {
+                         font-size: $sizeh3;
+                     }
+                     &:hover {
+                         color: $color3;
+                         background-color: $color2;
+                     }
+                     &:hover h3 {
+                         color: $color3;
+                     }
+                 }
+             }
+
+         }
     }
 }
 @media screen and (max-width: 1400px) {
@@ -176,23 +235,12 @@ header {
             align-self: center;
             display: flex;
         }
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    #home {
         div {
             div {
-                a {
-                    div {
-                        width: 150px;
-                        height: 150px;
-                        margin: 20px 0;
+                width: 100%;
+                div {
+                    width: 50%;
 
-                        img {
-                            width: 150px;
-                        }
-                    }
                 }
             }
         }
@@ -206,25 +254,37 @@ header {
 
     #home {
         h3 {
-            font-size: $sizeh4;
+            font-size: 30px;
         }
 
         div {
             div {
-                width: 80%;
-                flex-direction: column;
+                justify-content: center;
+                div {
+                    width: 60%;
+                    a {
+                        margin: 1rem;
 
-                a {
-                    margin: 1rem;
-
-                    div {
-                        width: 250px;
-                        height: 250px;
-
-                        img {
+                        div {
                             width: 250px;
+                            height: 250px;
+
+                            img {
+                                width: 250px;
+                            }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    #home {
+        div {
+            div {
+                div {
+                    width: 100%;
                 }
             }
         }

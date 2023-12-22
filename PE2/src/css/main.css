@@ -4,6 +4,152 @@
   box-sizing: border-box;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.46);
+  height: 850px;
+}
+header div {
+  align-items: center;
+  width: 100%;
+  padding: 10rem 0;
+}
+header div div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+header div div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header div div div a {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fcfeef;
+  border-radius: 1rem;
+  margin: 0 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  color: #29503c;
+  text-decoration: none;
+  max-width: 20rem;
+  height: 40rem;
+}
+header div div div a div {
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+}
+header div div div a div img {
+  width: 200px;
+}
+header div div div a p {
+  font-size: 20px;
+}
+header div div div a h3 {
+  font-size: 35px;
+}
+header div div div a:hover {
+  color: #fcfeef;
+  background-color: #29503c;
+}
+header div div div a:hover h3 {
+  color: #fcfeef;
+}
+header div div a {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 20px;
+  color: #29503c;
+  text-decoration: none;
+  margin: 1rem;
+}
+header div div a:hover {
+  color: #e2cb03;
+}
+header div h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 50px;
+  color: #fcfeef;
+  text-align: center;
+}
+header div h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 40px;
+  color: #e2cb03;
+  text-align: center;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 5rem 20rem;
+}
+#home h3 {
+  font-size: 35px;
+  color: #29503c;
+  font-family: "Tilt Neon", sans-serif;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 1400px) {
+  header {
+    width: 100%;
+  }
+  #home {
+    padding: 5rem 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+  }
+  #home h3 {
+    padding: 1rem 0;
+    align-self: center;
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #home div div a div {
+    width: 150px;
+    height: 150px;
+    margin: 20px 0;
+  }
+  #home div div a div img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 700px) {
+  header {
+    display: none;
+  }
+  #home h3 {
+    font-size: 30px;
+  }
+  #home div div {
+    width: 80%;
+    flex-direction: column;
+  }
+  #home div div a {
+    margin: 1rem;
+  }
+  #home div div a div {
+    width: 250px;
+    height: 250px;
+  }
+  #home div div a div img {
+    width: 250px;
+  }
+}
 #inlog {
   display: flex;
   flex-direction: column;

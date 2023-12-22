@@ -28,7 +28,8 @@ export default createStore({
         },
         bestaand: state => {
             return state.gegevens
-        }
+        },
+        isLoggedIn: (state) => !!state.currentUser
     },
     mutations: {
         addToCart(state, product) {

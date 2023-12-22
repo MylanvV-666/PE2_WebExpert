@@ -4,7 +4,7 @@
 <template>
     <main id="inlog">
         <img src="@/assets/logo.png" alt="logo">
-        <form>
+        <form @submit.prevent="login">
             <div>
                 <label for="mail">E-mail</label>
                 <br>
@@ -18,6 +18,7 @@
             <a href="#">wachtwoord vergeten.</a>
             <button type="submit">Log in</button>
         </form>
+        <p v-if="loginError" class="error-message">Incorrect email or password</p>
     </main>
 </template>
 
